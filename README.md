@@ -25,7 +25,6 @@
 ### ArcGIS for Desktop Users
 
 * [ArcGIS Desktop 10.3.1](http://desktop.arcgis.com/en/arcmap/10.3/get-started/system-requirements/arcgis-desktop-system-requirements.htm)
-
 * ArcMap 
 
 ## Instructions
