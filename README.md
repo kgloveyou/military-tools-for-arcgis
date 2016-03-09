@@ -1,8 +1,11 @@
-# military-analyst-arcmap-toolbar
+# Military-Tools-For-ArcGIS
 
 
 ## Features
-* Toolbar - Set of Military Analyst tools all in one easy-to-use toolbar
+* Toolbar - Set of Military Tools for ArcGIS
+	* Show command for Coordinate Conversion
+	* Show command for Distance and Direction
+	* Show command for Visibility
 * Addin for ArcMap 10.3.1
 
 ## Sections
@@ -29,8 +32,30 @@
 
 ## Instructions
 
-1. Fork and then clone the repo. 
-2. Test out the toolbar
+## Devs
+* Building
+	* To Build Using Visual Studio
+		* Open and build solution file
+	* To use MSBuild to build the solution
+		* Open a Visual Studio Command Prompt: Start Menu | Visual Studio 2013 | Visual Studio Tools | Developer Command Prompt for VS2013
+		* ``` cd Military-Tools-For-ArcGIS\source\ArcMapAddinMAToolbar ```
+		* ``` msbuild ArcMapAddinMAToolbar.sln /property:Configuration=Release ```
+
+## Users
+* Running
+	* To run from a stand-alone deployment
+		* ArcMap
+			* Install the add-in from the ``` application\addins ``` folder by double clicking ``` InstallMilitaryToolsForArcGIS.bat ```
+			* Enable the toolbar by right clicking ArcMap toolbar area and checking "Military Tools for ArcGIS" 
+				* Toolbar appears with commands to show each military tool
+
+## Adding an AddIn to the Military Tools for ArcGIS
+* Copy your AddIn to the ``` application\addins ``` folder
+* Edit the ``` InstallMilitaryToolsForArcGIS.bat ``` and add an install line for your AddIn at the top of the file
+* Open the solution and add a reference to your AddIn command in the ``` Config.esriaddinx ``` file
+* Re-compile solution
+* Add newly compiled ``` ArcMapAddinMAToolbar.esriAddIn ``` to the ``` application\addins ``` folder
+* Test changes to batch file for correctness
 
 ## Resources
 
@@ -40,7 +65,7 @@
 
 ## Issues
 
-Find a bug or want to request a new feature?  Please let us know by submitting an issue.
+Find a bug or want to request a new feature?  Please let us know by submitting an [issue](https://github.com/ArcGIS/Military-Tools-For-ArcGIS/issues).
 
 ## Contributing
 
