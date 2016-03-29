@@ -15,7 +15,7 @@
       <Toolbars>
         <Toolbar id="Esri_ArcMapAddinMAToolbar_Military_Analyst_Toolbar" caption="Military Tools for ArcGIS" showInitially="false">
           <Items>
-            <Button refID="ESRI_ArcMapAddinCoordinateConversion_CoordinateToolButton"/>
+            <Button refID="Esri_ArcMapAddinCoordinateConversion_CoordinateConversionButton"/>
             <Button refID="Esri_ArcMapAddinGeodesyAndRange_GeodesyAndRangeButton"/>
             <Button refID="Esri_ArcMapAddinVisibility_VisibilityButton"/>
           </Items>
