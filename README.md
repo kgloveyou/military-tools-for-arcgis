@@ -1,5 +1,7 @@
-# Military-Tools-For-ArcGIS
+# military-tools-for-arcgis
+military-tools-for-arcgis is a container repository that is used to distribute several related repositories (see [Resources](#resources) section) as a single installable Add-in.
 
+![screenshot of tools](screenshot_600x400.png)
 
 ## Features
 * Toolbar - Set of Military Tools for ArcGIS
@@ -28,7 +30,7 @@
 ### ArcGIS for Desktop Users
 
 * [ArcGIS Desktop 10.3.1](http://desktop.arcgis.com/en/arcmap/10.3/get-started/system-requirements/arcgis-desktop-system-requirements.htm)
-* ArcMap 
+	* ArcMap
 
 ## Instructions
 
@@ -63,6 +65,12 @@
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 
 
+### Related repositories:
+* [solutions-geoprocessing-toolbox](https://github.com/Esri/solutions-geoprocessing-toolbox)
+* [solutions-webappbuilder-widgets](https://github.com/Esri/solutions-webappbuilder-widgets)
+* [coordinate-conversion-addin-dotnet](https://github.com/Esri/coordinate-conversion-addin-dotnet)
+* [distance-direction-addin-dotnet](https://github.com/Esri/distance-direction-addin-dotnet)
+
 ## Issues
 
 Find a bug or want to request a new feature?  Please let us know by submitting an [issue](https://github.com/ArcGIS/Military-Tools-For-ArcGIS/issues).
@@ -70,6 +78,17 @@ Find a bug or want to request a new feature?  Please let us know by submitting a
 ## Contributing
 
 Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
+
+###Repository Owner: [Lyle](https://github.com/topowright)
+
+* Merge Pull Requests
+* Creates Releases and Tags
+* Manages Milestones
+* Manages and Assigns Issues
+
+###Secondary: [Matt](https://github.com/mfunk)
+
+* Backup when the Owner is away
 
 ## Licensing
 Copyright 2015 Esri
