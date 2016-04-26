@@ -1,5 +1,5 @@
 # military-tools-for-arcgis
-military-tools-for-arcgis is a container repository that is used to distribute several related repositories (see [Resources](#resources) section) as a single installable Add-in.
+military-tools-for-arcgis is a container repository that is used to distribute several related repositories (see [Resources](#resources) section) as a single installable Add-in toolbar.
 
 ![screenshot of tools](screenshot_600x400.png)
 
@@ -79,6 +79,8 @@ Find a bug or want to request a new feature?  Please let us know by submitting a
 
 Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
 
+### Repository Points of Contact
+
 ###Repository Owner: [Lyle](https://github.com/topowright)
 
 * Merge Pull Requests
@@ -105,7 +107,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-A copy of the license is available in the repository's [license.txt]( https://raw.github.com/Esri/quickstart-map-js/master/license.txt) file.
+A copy of the license is available in the repository's [license.txt](./license.txt) file.
 
-[](Esri Tags: ArcGIS ArcMap Toolbar Military Analyst)
+[](Esri Tags: ArcGIS ArcMap Toolbar Add-In Military Analyst Defense ArcGISSolutions)
 [](Esri Language: .NET)​
