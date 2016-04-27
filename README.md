@@ -1,5 +1,7 @@
 # military-tools-for-arcgis
-military-tools-for-arcgis is a container repository that is used to distribute several related repositories (see [Resources](#resources) section) as a single installable Add-in toolbar.
+Military Tools for ArcGIS combines several mission-focused ArcGIS enhancements for defense and intelligence. 
+
+This repository serves as a container repository that is used to distribute several related repositories (see [Resources](#resources) section) as a single installable Add-in toolbar.
 
 ![screenshot of tools](screenshot_600x400.png)
 
