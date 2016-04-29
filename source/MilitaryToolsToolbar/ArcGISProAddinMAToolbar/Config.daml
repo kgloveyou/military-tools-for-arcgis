@@ -7,10 +7,10 @@
 
   <AddInInfo id="{6d5dbff0-2d5c-4fc6-a730-692b7ea1ca0f}" version="1.0" desktopVersion="1.2.5023">
     <Name>ArcGISProMAToolbar</Name>   
-    <Description>ArcGISProMAToolbar description</Description>
+    <Description>Military Tools for ArcGIS</Description>
     <Image>Images\AddinDesktop32.png</Image>
-    <Author>dani5393</Author>
-    <Company>Acme</Company>
+    <Author>Esri</Author>
+    <Company>Esri</Company>
     <Date>4/28/2016 3:38:17 PM, 2016</Date>
     <Subject>Framework</Subject>
     <!-- Note subject can be one or more of these topics:
@@ -20,17 +20,31 @@
   <modules>
     <insertModule id="ArcGISProMAToolbar_Module" className="Module1" autoLoad="false" caption="Module1">
       <!-- uncomment to have the control hosted on a separate tab-->
+      <tabGroups>
+        <!--The new Tab Group is created here-->
+        <!--<tabGroup caption="Example State Solution" id="working_with_DAML_ExampleStateTabGroup">-->
+        <tabGroup id="MilitaryToolsTabGroup">
+          <color A="255" R="238" G="170" B="90" />
+          <borderColor A="0" R="251" G="226" B="195" />
+        </tabGroup>
+      </tabGroups>
       <tabs>
-        <!--<tab id="ArcGISProMAToolbar_Tab1" caption="New Tab">
-          <group refID="ArcGISProMAToolbar_Group1"/>
-        </tab>-->
+        <tab id="working_with_DAML_Tab1" caption="Military Tools" tabGroupID="working_with_DAML_ExampleStateTabGroup">
+          <group refID="CoordinateConversion_Group" />
+          <group refID="DistanceDirection_Group" />
+          <group refID="Visibility_Group" />
+        </tab>
       </tabs>
               
       <groups>
-        <!-- comment this out if you have no controls on the Addin tab to avoid
-              an empty group-->
-        <group id="ArcGISProMAToolbar_Group1" caption="Group 1" appearsOnAddInTab="true">
-          <!-- host controls within groups -->
+        <group id="CoordinateConversion_Group" caption="Coordinate Conversion" appearsOnAddInTab="false">
+          <button refID="esri_core_saveProjectButton" />
+        </group>
+        <group id="DistanceDirection_Group" caption="Distance and Direction" appearsOnAddInTab="false">
+          <button refID="esri_mapping_clearSelectionButton" />
+        </group>
+        <group id="Visibility_Group" caption="Visibility" appearsOnAddInTab="false">
+          <button refID="esri_geoprocessing_selectByLocationButton" />
         </group>
       </groups>
       
