@@ -19,33 +19,29 @@
 
   <modules>
     <insertModule id="ArcGISProMAToolbar_Module" className="Module1" autoLoad="false" caption="Module1">
-      <!-- uncomment to have the control hosted on a separate tab-->
+      <!-- uncomment to have the control hosted on a separate tab -->
       <tabGroups>
-        <!--The new Tab Group is created here-->
-        <!--<tabGroup caption="Example State Solution" id="working_with_DAML_ExampleStateTabGroup">-->
-        <tabGroup id="MilitaryToolsTabGroup">
+        <tabGroup id="MilitaryTools_TabGroup">
           <color A="255" R="238" G="170" B="90" />
           <borderColor A="0" R="251" G="226" B="195" />
         </tabGroup>
       </tabGroups>
       <tabs>
-        <tab id="working_with_DAML_Tab1" caption="Military Tools" tabGroupID="working_with_DAML_ExampleStateTabGroup">
-          <group refID="CoordinateConversion_Group" />
-          <group refID="DistanceDirection_Group" />
-          <group refID="Visibility_Group" />
+        <tab id="MilitaryTools_Tab" caption="Military Tools" tabGroupID="MilitaryTools_TabGroup">
+          <group refID="MilitaryTools_Group" />
         </tab>
       </tabs>
               
       <groups>
-        <group id="CoordinateConversion_Group" caption="Coordinate Conversion" appearsOnAddInTab="false">
-          <button refID="esri_core_saveProjectButton" />
+        <group id="MilitaryTools_Group"  caption="Windows" appearsOnAddInTab="false">
+          <button refID="ProAppCoordConversionModule_CoordinateConversionDockpane_ShowButton" />
+
+          <button refID="ProAppDistanceAndDirectionModule_DistanceAndDirectionDockpane_ShowButton"/>
+
+          <button refID="ProAppVisibilityModule_VisibilityDockpane_ShowButton" />
+
         </group>
-        <group id="DistanceDirection_Group" caption="Distance and Direction" appearsOnAddInTab="false">
-          <button refID="esri_mapping_clearSelectionButton" />
-        </group>
-        <group id="Visibility_Group" caption="Visibility" appearsOnAddInTab="false">
-          <button refID="esri_geoprocessing_selectByLocationButton" />
-        </group>
+        
       </groups>
       
       <controls>
