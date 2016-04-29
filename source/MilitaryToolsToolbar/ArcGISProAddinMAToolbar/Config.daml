@@ -7,10 +7,10 @@
 
   <AddInInfo id="{6d5dbff0-2d5c-4fc6-a730-692b7ea1ca0f}" version="1.0" desktopVersion="1.2.5023">
     <Name>ArcGISProMAToolbar</Name>   
-    <Description>ArcGISProMAToolbar description</Description>
+    <Description>Military Tools for ArcGIS</Description>
     <Image>Images\AddinDesktop32.png</Image>
-    <Author>dani5393</Author>
-    <Company>Acme</Company>
+    <Author>Esri</Author>
+    <Company>Esri</Company>
     <Date>4/28/2016 3:38:17 PM, 2016</Date>
     <Subject>Framework</Subject>
     <!-- Note subject can be one or more of these topics:
@@ -19,19 +19,29 @@
 
   <modules>
     <insertModule id="ArcGISProMAToolbar_Module" className="Module1" autoLoad="false" caption="Module1">
-      <!-- uncomment to have the control hosted on a separate tab-->
+      <!-- uncomment to have the control hosted on a separate tab -->
+      <tabGroups>
+        <tabGroup id="MilitaryTools_TabGroup">
+          <color A="255" R="238" G="170" B="90" />
+          <borderColor A="0" R="251" G="226" B="195" />
+        </tabGroup>
+      </tabGroups>
       <tabs>
-        <!--<tab id="ArcGISProMAToolbar_Tab1" caption="New Tab">
-          <group refID="ArcGISProMAToolbar_Group1"/>
-        </tab>-->
+        <tab id="MilitaryTools_Tab" caption="Military Tools" tabGroupID="MilitaryTools_TabGroup">
+          <group refID="MilitaryTools_Group" />
+        </tab>
       </tabs>
               
       <groups>
-        <!-- comment this out if you have no controls on the Addin tab to avoid
-              an empty group-->
-        <group id="ArcGISProMAToolbar_Group1" caption="Group 1" appearsOnAddInTab="true">
-          <!-- host controls within groups -->
+        <group id="MilitaryTools_Group"  caption="Windows" appearsOnAddInTab="false">
+          <button refID="ProAppCoordConversionModule_CoordinateConversionDockpane_ShowButton" />
+
+          <button refID="ProAppDistanceAndDirectionModule_DistanceAndDirectionDockpane_ShowButton"/>
+
+          <button refID="ProAppVisibilityModule_VisibilityDockpane_ShowButton" />
+
         </group>
+        
       </groups>
       
       <controls>
