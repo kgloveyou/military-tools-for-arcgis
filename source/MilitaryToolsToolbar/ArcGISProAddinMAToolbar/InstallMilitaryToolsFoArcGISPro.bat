@@ -1,7 +1,7 @@
 C:
-SET COMMONDIR="C:\Program Files (x86)\Common Files\ArcGIS\bin"
-IF NOT EXIST %COMMONDIR% SET COMMONDIR="C:\Program Files\Common Files\ArcGIS\bin"
-%COMMONDIR%\ESRIRegAddIn.exe /s ProAppCoordConversionModule.esriAddInX
-%COMMONDIR%\ESRIRegAddIn.exe /s ProAppDistanceAndDirectionModule.esriAddInX
-%COMMONDIR%\ESRIRegAddIn.exe /s ProAppVisibilityModule.esriAddInX
-start %COMMONDIR%\ESRIRegAddIn.exe ArcGISProAddinMAToolbar.esriAddInX
+SET COMMONDIR="C:\Program Files (x86)\ArcGIS\Pro\bin"
+IF NOT EXIST %COMMONDIR% SET COMMONDIR="C:\Program Files\ArcGIS\Pro\bin"
+%COMMONDIR%\RegisterAddIn.exe /s Addins\CoordinateConversion\ProAppCoordConversionModule.esriAddInX
+%COMMONDIR%\RegisterAddIn.exe /s Addins\DistanceAndDirection\ProAppDistanceAndDirectionModule.esriAddInX
+%COMMONDIR%\RegisterAddIn.exe /s Addins\Visibility\ProAppVisibilityModule.esriAddInX
+start %COMMONDIR%\RegisterAddIn.exe Addins\MilitaryToolsToolbar\ArcGISProAddinMAToolbar.esriAddInX
