@@ -51,27 +51,27 @@ This repository serves as a container repository that is used to distribute seve
 * Running
 	* To run from a stand-alone deployment
 		* ArcMap
-			* Install the add-in from the ``` MilitaryToolsForArcgis\ArcMap ``` folder by double clicking ``` InstallMilitaryToolsForArcMap.bat ```
+			* Install the add-in from the ` MilitaryToolsForArcgis\ArcMap ` folder by double clicking ` InstallMilitaryToolsForArcMap.bat `
 			* Enable the toolbar by right clicking ArcMap toolbar area and checking "Military Tools for ArcGIS" 
 				* Toolbar appears with commands to show each military tool
 		* ArcGIS Pro
-			* Install the add-in from the ``` MilitaryToolsForArcgis\ArcGISPro ``` folder by double clicking ``` InstallMilitaryToolsForArcGISPro.bat ```
+			* Install the add-in from the ` MilitaryToolsForArcgis\ArcGISPro ` folder by double clicking ` InstallMilitaryToolsForArcGISPro.bat `
 			* Select the Military Tools tab to display the Military Tools ribbon and associated Military Tools add-ins.
 
 ## Adding an AddIn to the Military Tools for ArcGIS
 * ArcMap
-	* Copy your AddIn to the ``` ArcMap\Addins ``` folder
-	* Edit the ``` InstallMilitaryToolsForArcMap.bat ``` and add an install line for your AddIn
-	* Open the solution and add a reference to your AddIn command in the ``` Config.esriaddinx ``` file under the 'Items' tag
+	* Copy your AddIn to the ` ArcMap\Addins ` folder
+	* Edit the ` InstallMilitaryToolsForArcMap.bat ` and add an install line for your AddIn
+	* Open the solution and add a reference to your AddIn command in the ` Config.esriaddinx ` file under the 'Items' tag
 	* Re-compile solution
-	* Add newly compiled ``` ArcMapAddinMAToolbar.esriAddIn ``` to the ``` ArcMap\Addins\MilitaryToolsToolbar ``` folder
+	* Add newly compiled ` ArcMapAddinMAToolbar.esriAddIn ` to the ` ArcMap\Addins\MilitaryToolsToolbar ` folder
 	* Test changes to batch file for correctness
 * ArcGIS Pro
-	* Copy your AddIn to the ``` ArcGISPro\Addins ``` folder
+	* Copy your AddIn to the ` ArcGISPro\Addins ` folder
 	* Edit the ``` InstallMilitaryToolsForArcGISPro.bat ``` and add an install line for your AddIn
-	* Open the solution and add a reference to your AddIn command in the ``` Config.daml ``` file under the 'groups' tag
+	* Open the solution and add a reference to your AddIn command in the ` Config.daml ` file under the 'groups' tag
 	* Re-compile solution
-	* Add newly compiled ``` ArcGISProMAToolbar.esriAddInX ``` to the ``` ArcGISPro\Addins\MilitaryToolsToolbar ``` folder
+	* Add newly compiled ` ArcGISProMAToolbar.esriAddInX ` to the ` ArcGISPro\Addins\MilitaryToolsToolbar ` folder
 
 ## Resources
 
