@@ -72,6 +72,7 @@ This repository serves as a container repository that is used to distribute seve
 	* Open the solution and add a reference to your AddIn command in the ` Config.daml ` file under the 'groups' tag
 	* Re-compile solution
 	* Add newly compiled ` ArcGISProMAToolbar.esriAddInX ` to the ` ArcGISPro\Addins\MilitaryToolsToolbar ` folder
+	* Test changes to batch file for correctness
 
 ## Resources
 
