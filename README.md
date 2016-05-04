@@ -29,6 +29,7 @@ This repository serves as a container repository that is used to distribute seve
 * Visual Studio 2013
 * ArcGIS Desktop SDK for .NET 10.3.1
 	* [ArcGIS Desktop for .NET Requirements](https://desktop.arcgis.com/en/desktop/latest/get-started/system-requirements/arcobjects-sdk-system-requirements.htm)
+* ArcGIS Pro 1.2 SDK
 
 ### ArcGIS for Desktop Users
 
@@ -43,24 +44,34 @@ This repository serves as a container repository that is used to distribute seve
 		* Open and build solution file
 	* To use MSBuild to build the solution
 		* Open a Visual Studio Command Prompt: Start Menu | Visual Studio 2013 | Visual Studio Tools | Developer Command Prompt for VS2013
-		* ``` cd Military-Tools-For-ArcGIS\source\ArcMapAddinMAToolbar ```
-		* ``` msbuild ArcMapAddinMAToolbar.sln /property:Configuration=Release ```
+		* ``` cd Military-Tools-For-ArcGIS\source\MilitaryToolsToolbar ```
+		* ``` msbuild MilitaryToolsToolbar.sln /property:Configuration=Release ```
 
 ## Users
 * Running
 	* To run from a stand-alone deployment
 		* ArcMap
-			* Install the add-in from the ``` application\addins ``` folder by double clicking ``` InstallMilitaryToolsForArcGIS.bat ```
+			* Install the add-in from the ``` MilitaryToolsForArcgis\ArcMap ``` folder by double clicking ``` InstallMilitaryToolsForArcMap.bat ```
 			* Enable the toolbar by right clicking ArcMap toolbar area and checking "Military Tools for ArcGIS" 
 				* Toolbar appears with commands to show each military tool
+		* ArcGIS Pro
+			* Install the add-in from the ``` MilitaryToolsForArcgis\ArcGISPro ``` folder by double clicking ``` InstallMilitaryToolsForArcGISPro.bat ```
+			* Select the Military Tools tab to display the Military Tools ribbon and associated Military Tools add-ins.
 
 ## Adding an AddIn to the Military Tools for ArcGIS
-* Copy your AddIn to the ``` application\addins ``` folder
-* Edit the ``` InstallMilitaryToolsForArcGIS.bat ``` and add an install line for your AddIn at the top of the file
-* Open the solution and add a reference to your AddIn command in the ``` Config.esriaddinx ``` file
-* Re-compile solution
-* Add newly compiled ``` ArcMapAddinMAToolbar.esriAddIn ``` to the ``` application\addins ``` folder
-* Test changes to batch file for correctness
+* ArcMap
+	* Copy your AddIn to the ``` ArcMap\Addins ``` folder
+	* Edit the ``` InstallMilitaryToolsForArcMap.bat ``` and add an install line for your AddIn
+	* Open the solution and add a reference to your AddIn command in the ``` Config.esriaddinx ``` file in the <Items> section
+	* Re-compile solution
+	* Add newly compiled ``` ArcMapAddinMAToolbar.esriAddIn ``` to the ``` ArcMap\Addins\MilitaryToolsToolbar ``` folder
+	* Test changes to batch file for correctness
+* ArcGIS Pro
+	* Copy your AddIn to the ``` ArcGISPro\Addins ``` folder
+	* Edit the ``` InstallMilitaryToolsForArcGISPro.bat ``` and add an install line for your AddIn
+	* Open the solution and add a reference to your AddIn command in the ``` Config.daml ``` file in the <groups> section
+	* Re-compile solution
+	* Add newly compiled ``` ArcGISProMAToolbar.esriAddInX ``` to the ``` ArcGISPro\Addins\MilitaryToolsToolbar ``` folder
 
 ## Resources
 
