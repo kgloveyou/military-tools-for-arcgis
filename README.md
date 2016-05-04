@@ -11,6 +11,7 @@ This repository serves as a container repository that is used to distribute seve
 	* Show command for Distance and Direction
 	* Show command for Visibility
 * Addin for ArcMap 10.3.1
+* Addin for ArcGIS Pro 1.2 
 
 ## Sections
 
