@@ -62,14 +62,14 @@ This repository serves as a container repository that is used to distribute seve
 * ArcMap
 	* Copy your AddIn to the ``` ArcMap\Addins ``` folder
 	* Edit the ``` InstallMilitaryToolsForArcMap.bat ``` and add an install line for your AddIn
-	* Open the solution and add a reference to your AddIn command in the ``` Config.esriaddinx ``` file in the <Items> section
+	* Open the solution and add a reference to your AddIn command in the ``` Config.esriaddinx ``` file in the '<Items>' section
 	* Re-compile solution
 	* Add newly compiled ``` ArcMapAddinMAToolbar.esriAddIn ``` to the ``` ArcMap\Addins\MilitaryToolsToolbar ``` folder
 	* Test changes to batch file for correctness
 * ArcGIS Pro
 	* Copy your AddIn to the ``` ArcGISPro\Addins ``` folder
 	* Edit the ``` InstallMilitaryToolsForArcGISPro.bat ``` and add an install line for your AddIn
-	* Open the solution and add a reference to your AddIn command in the ``` Config.daml ``` file in the <groups> section
+	* Open the solution and add a reference to your AddIn command in the ``` Config.daml ``` file in the '<groups>' section
 	* Re-compile solution
 	* Add newly compiled ``` ArcGISProMAToolbar.esriAddInX ``` to the ``` ArcGISPro\Addins\MilitaryToolsToolbar ``` folder
 
